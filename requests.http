@@ -1,0 +1,62 @@
+GET localhost:3000/users
+
+###
+
+GET localhost:3000/users/369df4b5-1ed5-44e9-8421-5fdfaad4a57c
+
+###
+
+POST localhost:3000/users
+Content-Type: application/json
+
+{
+ "name": "Geraldo",
+ "email": "geraldojrcg@mail.com",
+ "password": "qwe123qwe"
+}
+
+###
+
+PATCH localhost:3000/users/705535cf-c700-4a08-88f0-c13430c8d907
+Content-Type: application/json
+
+{
+  "name": "Geraldo Jr",
+  "email": "geraldojrc@mail.com"
+}
+
+###
+
+DELETE localhost:3000/users/705535cf-c700-4a08-88f0-c13430c8d907
+
+###
+
+GET localhost:3000/todos
+
+###
+
+GET localhost:3000/todos/92439469-78c0-4b27-a221-2c61e2814fef
+
+###
+
+POST localhost:3000/todos
+Content-Type: application/json
+
+{
+  "description": "Criar api",
+  "user_id": "369df4b5-1ed5-44e9-8421-5fdfaad4a57c"
+}
+
+###
+
+PATCH localhost:3000/todos/bedddebd-f0a7-498c-98d8-f181e5fc937d
+Content-Type: application/json
+
+{
+  "completed": true
+}
+
+###
+
+DELETE localhost:3000/todos/bedddebd-f0a7-498c-98d8-f181e5fc937d
+
